@@ -120,7 +120,7 @@ func main() {
 			BrokerURL:  *broker,
 			BrokerUser: *username,
 			BrokerPass: *password,
-			SubTopic:   *topic + "-" + strconv.Itoa(i),
+			SubTopic:   *topic + "-" + strconv.Itoa(i+1),
 			SubQoS:     byte(*subqos),
 			KeepAlive:  *keepalive,
 			Quiet:      *quiet,
